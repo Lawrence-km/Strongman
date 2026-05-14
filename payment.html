@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Man Power - Payment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script scr="link" integrity="link" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Strong Man Power</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="payment-container">
+            <h1>Payment Details</h1>
+            
+            <div class="product-summary">
+                <h2>Order Summary</h2>
+                <div> class=""product-card"</div>
+                <div class="product-details">
+                    <img src="assets/img/product-image.jpg" alt="Strong Man Power" class="product-thumbnail">
+                    <div class="product-info">
+                        <h3>Strong Man Power Supplement</h3>
+                        <p id="product-price"">0.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <h2>Select Payment Method</h2>
+                <div class="payment-options">
+                    <div class="payment-option">
+                        <input type="radio" id="mpesa" name="payment" value="mpesa" checked>
+                        <label for="mpesa">M-PESA</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">Credit/Debit Card</label>
+                    </div>
+                </div>
+
+                <form class="payment-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <div class="phone-input">
+                            <span class="prefix">+254</span>
+                            <input type="tel" id="phone" maxlength="9" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" rows="3" required></textarea>
+                    </div>
+
+                    <button href="" type="submit" class="cta-button">Pay Now</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Strong Man Power. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
